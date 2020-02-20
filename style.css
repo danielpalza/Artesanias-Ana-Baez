@@ -1,6 +1,10 @@
 body{
     margin:0;
 }
+p{
+    font-family: 'Satisfy', cursive;
+
+}
 
 /*Header: titulo y botones*/
 #navbar{
@@ -8,7 +12,7 @@ body{
     
     padding:25px;
     flex-direction: row;
-    background-color: #E2AFDE;
+    background-image: linear-gradient(#E2AFDE,hsl(300, 69%, 85%));
     justify-content: space-between;
 }
 
@@ -128,7 +132,7 @@ button{
 /*Main: texto y fotos*/
 #main{
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #BFA4A4;
+    background-image: linear-gradient(#BFA4A4,#E2AFDE);
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -154,17 +158,50 @@ button{
 /*Footer: botones de redes sociales*/
 #footer{
     display:flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    height: 200px;
+    height: auto;
     align-items: center;
     background-image:linear-gradient( #8783D1,#E2AFDE);
 }
-#iconos{
-    
-    cursor:pointer;
 
+#box-buttoms{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+   
+    
+}
+#boton{
+    padding-left:50px;
+    padding-right: 50px;
+    cursor:pointer;
+    transition: 200ms ease-in-out 0s;
+
+}
+#iconos{
+    border:4px solid  #8783D1;
+    border-radius: 55%;
+    
+}
+#p{
+    opacity: 0;
+    transition: 200ms linear 0s;
+}
+
+#boton:hover{
+    margin-bottom: 20px;
+    
+}
+#boton:hover > #p{
+    opacity: 1;
+}
+#contacto{
+    font-size: 1.3em;
 }
 
 
