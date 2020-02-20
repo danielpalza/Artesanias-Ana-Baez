@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="StyleSheet" type="text/css" href="style.css" screen="media"/>
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Quicksand&display=swap" rel="stylesheet">
 
     <title>Artesanias Ana Baez</title>
 </head>
@@ -13,9 +14,11 @@
         <header id="navbar">
             <div class="title"><u>Artesanias Ana Baez</u></div>
             <nav id="box-buttons">
-                <button id="but"><u>Sobre mi</u></button>
-                <button id="but"><u>Mis trabajos </u></button>
-                <button id="but"><u>Contacto</u></button>
+                
+                <a id="but" href="#texto"><u>Sobre mi</u></a>
+                <a id="but" href="#imagenes"><u>Mis trabajos</u></a>
+               
+                <a id="but" href="#form"><u>Contacto</u></a>
 
             </nav>
         </header>
@@ -41,6 +44,16 @@
                   non mi condimentum, eget accumsan urna consequat.</p>
             <div id="imagenes"><img src="souvenirs/9jHp3gSR.jpg" width="auto" height="auto" /></div>
             </main>
+            <div id="box-form">
+                <form id="form">
+                    Correo Electronico:<input type="email" id="input" placeholder="Email..">
+                    Whatsapp:<input type="tel" id="input" placeholder="Whatsapp..">
+                    Nombre:<input type="text" id="input" placeholder="Nombre..">
+                    Consulta:<textarea id="input" rows="10" cols="40" placeholder="Escriba aqui su consulta..."></textarea>
+
+               </form>
+            </div>
+
             <footer id="footer">
                 <div id="box-buttoms">
                     <button id="boton" >
@@ -55,7 +68,7 @@
                 </div>
                 <div>
                     <p id="contacto">Whatsapp: 1156498962<br>Email: analuciabaez@hotmail.com
-                        <br>Estamos ubicados en Moreno, Bs As.<br>Hacemos envios al interior</p>
+                        <br>Estamos ubicados en Moreno, Bs As, Argentina.<br>Hacemos envios al interior del pais.</p>
                 </div>
                 
             </footer>
