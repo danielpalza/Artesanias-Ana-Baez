@@ -10,7 +10,8 @@
 
     <title>Artesanias Ana Baez</title>
 </head>
-<body>
+<body>  
+    <!--Cabecera: botones y animaciones del titulo-->
         <header id="navbar">
             <div class="title"><u>Artesanias Ana Baez</u></div>
             <nav id="box-buttons">
@@ -23,6 +24,7 @@
             </nav>
         </header>
         <main id="main">
+            <!-- Texto de introduccion-->
             <p id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                  Etiam lacus mi, tristique sed velit ac, elementum fringilla nibh.
                  Integer ac diam sit amet massa bibendum condimentum. Duis non laoreet libero.
@@ -42,8 +44,37 @@
                 et ex volutpat imperdiet vitae eget ex. Sed ac nisi porttitor, lobortis metus fringilla, luctus
                  mauris. Vestibulum eu purus pellentesque, congue odio eu, rutrum nibh. Vivamus venenatis augue
                   non mi condimentum, eget accumsan urna consequat.</p>
-            <div id="imagenes"><img src="souvenirs/9jHp3gSR.jpg" width="auto" height="auto" /></div>
+            
+            <!-- slider imagenes souvenirs-->
+                    
+                      <ul id="slider">
+                          <li id="souvenir-foto">
+                              <!--Los radio deben tener ID, y todos deben apuntar al mismo name-->
+                              <input type="radio" id="foto1" class="radio-boton" name="foto" >
+                              <label for="foto1"></label>
+                              <img src="souvenirs/04f77a38c0cb710e25033e7f56cdf362.jpg" alt="">
+                          </li>
+                          <li id="souvenir-foto">
+                              <input type="radio" id="foto2" class="radio-boton" name="foto" >
+                              <label for="foto2"></label>
+                              <img src="souvenirs/640432_oso.jpg" alt="">
+                          </li>
+                          <li id="souvenir-foto">
+                              <input type="radio" id="foto3" class="radio-boton" name="foto" >
+                              <label for="foto3"></label>
+                              <img src="souvenirs/9jHp3gSR.jpg" alt="">
+                          </li>
+                          <li id="souvenir-foto">
+                              <input type="radio" id="foto4" class="radio-boton" name="foto" checked>
+                              <label for="foto4"></label>
+                              <img src="souvenirs/b1e44c0cf79b2ad2a76f6f2013c3a5e1.jpg" alt="">
+                          </li>
+                      </ul>
+                          
+
+
             </main>
+            <!-- Formulario de contacto-->
             <div id="box-form">
                 <form id="form">
                     Correo Electronico:<input type="email" id="input" placeholder="Email..">
@@ -53,7 +84,7 @@
 
                </form>
             </div>
-
+            <!-- Botones de redes sociales-->
             <footer id="footer">
                 <div id="box-buttoms">
                     <button id="boton" >
@@ -66,6 +97,7 @@
                         
                     </button>
                 </div>
+                <!-- Informacion de contacto-->
                 <div>
                     <p id="contacto">Whatsapp: 1156498962<br>Email: analuciabaez@hotmail.com
                         <br>Estamos ubicados en Moreno, Bs As, Argentina.<br>Hacemos envios al interior del pais.</p>

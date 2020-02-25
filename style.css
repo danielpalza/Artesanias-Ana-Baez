@@ -10,7 +10,7 @@ p{
 /*Header: titulo y botones*/
 #navbar{
     display:flex;
-    
+   
     padding:25px;
     flex-direction: row;
     background-image: linear-gradient(#E2AFDE,hsl(300, 69%, 85%));
@@ -40,7 +40,7 @@ button{
 
 }
 #but{
-    margin:10px;
+    margin:15px;
     position: relative;
     
     z-index: 0;
@@ -145,6 +145,7 @@ button{
     flex-direction: row;
     justify-content: space-around;
     z-index: 0;
+    
 
 }
 #texto{
@@ -162,6 +163,61 @@ button{
     border:3px solid #8783D1;
     box-shadow: 0px 2px 5px #8783D1;
 }
+
+/*Slider:estilo y animacion*/
+#slider{
+    display:flex;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin:auto;
+    padding:0;
+    list-style: none;
+    border:4px solid rgb(182, 129, 177);
+    box-shadow: 0px 0px 6px rgb(182, 129, 177);
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 0;
+}
+#slider img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+#slider input[type="radio"]{
+    display: none;
+    position: relative;
+    margin: 10px;
+
+}
+#slider input[type="radio"] + label{
+    position: relative;
+    z-index: 50;
+    margin:15px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(221, 159, 215);
+    border: 3px solid rgb(223, 121, 214);
+    cursor: pointer;
+}
+
+#slider input[type="radio"]:checked ~ img{
+    opacity: 1;
+   
+}
+#slider input[type="radio"]:checked + label{
+    box-shadow: 0px 0px 5px rgb(253, 195, 248);
+    background-color: white;
+}
+
+
 /*Formulario de contacto*/
 #box-form{
     display:flex;
